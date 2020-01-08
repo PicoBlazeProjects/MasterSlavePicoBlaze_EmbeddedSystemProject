@@ -1,0 +1,53 @@
+#ifDef proc::xPblze6
+	#set proc::xPblze6::scrpdSize,				64						; [64, 128, 256]
+	#set proc::xPblze6::clkFreq,				100000000				; in Hz
+	
+	#set IOdev::Slave_BRAM::en,						TRUE
+	#set IOdev::Slave_BRAM::type,					mem
+	#set IOdev::Slave_BRAM::size,					1024
+	
+	#set instmem::pageSize,						1024
+	#set instmem::pageCount,					1
+	#set instmem::sharedMemLocation,			loMem	; [ hiMem, loMem ]
+	
+	#set IOdev::Slave_BRAM::value,					instMem
+	
+	#set IOdev::Slave_BRAM::verilogEn,					TRUE
+	#set IOdev::Slave_BRAM::verilogEntityName,			"Slave_BRAM"
+	#set IOdev::Slave_BRAM::verilogTmplFile,				"ROM_form_7S_4K_14March13.v"
+	#set IOdev::Slave_BRAM::verilogTargetFile,			"Slave_BRAM.v"
+#endIf
+
+#EQU hold s0
+#EQU data s1 
+#EQU counter s2
+#EQU read_adress s4
+#EQU write_address,sF
+#EQU interrupt_reg sA		
+#ORG ADDR, 0
+	INT ENABLE
+init:
+	LOAD data, 0x00
+	LOAD read_adress, 0xFF
+	LOAD interrupt_reg, 0X00
+	LOAD write_address, 0x11	
+	LOAD hold, 0x00
+	LOAD counter,0x00
+read:
+	COMP counter,8
+	JUMP Z, write
+	SL0 hold	
+	RDPRT data, (read_adress)
+	ADD hold, data	
+	ADD counter, 1
+	JUMP read
+write:
+	WRPRT hold, (write_address)
+	LOAD hold, 0x00
+	LOAD counter,0x00
+	JUMP read
+isr:
+   	ADD interrupt_reg , 01
+   	RETI ENABLE  
+#ORG ADDR, 1023
+    JUMP isr

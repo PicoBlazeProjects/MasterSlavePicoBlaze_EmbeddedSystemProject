@@ -1,0 +1,51 @@
+#ifDef proc::xPblze6
+	#set proc::xPblze6::scrpdSize,				64						; [64, 128, 256]
+	#set proc::xPblze6::clkFreq,				100000000				; in Hz
+	
+	#set IOdev::Master_BRAM::en,						TRUE
+	#set IOdev::Master_BRAM::type,					mem
+	#set IOdev::Master_BRAM::size,					1024
+	
+	#set instmem::pageSize,						1024
+	#set instmem::pageCount,					1
+	#set instmem::sharedMemLocation,			loMem	; [ hiMem, loMem ]
+	
+	#set IOdev::Master_BRAM::value,					instMem
+	
+	#set IOdev::Master_BRAM::verilogEn,					TRUE
+	#set IOdev::Master_BRAM::verilogEntityName,			"Master_BRAM"
+	#set IOdev::Master_BRAM::verilogTmplFile,				"ROM_form_7S_4K_14March13.v"
+	#set IOdev::Master_BRAM::verilogTargetFile,			"Master_BRAM.v"
+#endIf
+
+#EQU write_address s0
+#EQU data s1 
+#EQU read_adress s4
+#EQU interrupt_reg sA		
+#ORG ADDR, 0
+	INT ENABLE
+init:
+	LOAD write_address, 0x25
+	LOAD data, 0x00
+	LOAD read_adress, 0xFF
+	LOAD interrupt_reg, 0X00
+read:
+	ADD read_adress, 0x01
+	COMP read_adress, 64
+	JUMP Z,dis_interrupt
+	ADD read_adress, b11000000
+	RDPRT data, (read_adress) 	
+	RDPRT data, (read_adress)
+	ADD read_adress, b01000000
+send:
+	WRPRT data,(write_address) 
+	JUMP read
+dis_interrupt:
+	INT DISABLE
+end:
+	JUMP end	
+isr:
+   	ADD interrupt_reg , 01
+   	RETI ENABLE  
+#ORG ADDR, 1023
+    JUMP isr

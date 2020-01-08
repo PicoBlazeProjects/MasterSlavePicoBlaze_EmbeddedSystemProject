@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="TOP_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="TOP_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="649583333fs"></ZoomStartTime>
+      <ZoomEndTime time="1070083334fs"></ZoomEndTime>
+      <Cursor1Time time="721583000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="223"></NameColumnWidth>
+      <ValueColumnWidth column_width="129"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="37" />
+   <wvobject type="logic" fp_name="/TOP_tb/uut/clock">
+      <obj_property name="ElementShortName">clock</obj_property>
+      <obj_property name="ObjectShortName">clock</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TOP_tb/uut/reset">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TOP_tb/uut/instruction_master">
+      <obj_property name="ElementShortName">instruction_master[17:0]</obj_property>
+      <obj_property name="ObjectShortName">instruction_master[17:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TOP_tb/uut/in_port_master">
+      <obj_property name="ElementShortName">in_port_master[7:0]</obj_property>
+      <obj_property name="ObjectShortName">in_port_master[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TOP_tb/uut/out_port_master">
+      <obj_property name="ElementShortName">out_port_master[7:0]</obj_property>
+      <obj_property name="ObjectShortName">out_port_master[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TOP_tb/uut/port_id_master">
+      <obj_property name="ElementShortName">port_id_master[7:0]</obj_property>
+      <obj_property name="ObjectShortName">port_id_master[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TOP_tb/uut/BRAM/addra">
+      <obj_property name="ElementShortName">addra[5:0]</obj_property>
+      <obj_property name="ObjectShortName">addra[5:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TOP_tb/uut/address_master">
+      <obj_property name="ElementShortName">address_master[11:0]</obj_property>
+      <obj_property name="ObjectShortName">address_master[11:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TOP_tb/uut/bram_enable_master">
+      <obj_property name="ElementShortName">bram_enable_master</obj_property>
+      <obj_property name="ObjectShortName">bram_enable_master</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TOP_tb/uut/write_strobe_master">
+      <obj_property name="ElementShortName">write_strobe_master</obj_property>
+      <obj_property name="ObjectShortName">write_strobe_master</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TOP_tb/uut/k_write_strobe_master">
+      <obj_property name="ElementShortName">k_write_strobe_master</obj_property>
+      <obj_property name="ObjectShortName">k_write_strobe_master</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TOP_tb/uut/read_strobe_master">
+      <obj_property name="ElementShortName">read_strobe_master</obj_property>
+      <obj_property name="ObjectShortName">read_strobe_master</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TOP_tb/uut/interrupt_master">
+      <obj_property name="ElementShortName">interrupt_master</obj_property>
+      <obj_property name="ObjectShortName">interrupt_master</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TOP_tb/uut/interrupt_ack_master">
+      <obj_property name="ElementShortName">interrupt_ack_master</obj_property>
+      <obj_property name="ObjectShortName">interrupt_ack_master</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TOP_tb/uut/ram_addr">
+      <obj_property name="ElementShortName">ram_addr[5:0]</obj_property>
+      <obj_property name="ObjectShortName">ram_addr[5:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TOP_tb/uut/instruction_slave">
+      <obj_property name="ElementShortName">instruction_slave[17:0]</obj_property>
+      <obj_property name="ObjectShortName">instruction_slave[17:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TOP_tb/uut/in_port_slave">
+      <obj_property name="ElementShortName">in_port_slave[7:0]</obj_property>
+      <obj_property name="ObjectShortName">in_port_slave[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TOP_tb/uut/port_id_slave">
+      <obj_property name="ElementShortName">port_id_slave[7:0]</obj_property>
+      <obj_property name="ObjectShortName">port_id_slave[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TOP_tb/uut/address_slave">
+      <obj_property name="ElementShortName">address_slave[11:0]</obj_property>
+      <obj_property name="ObjectShortName">address_slave[11:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TOP_tb/uut/bram_enable_slave">
+      <obj_property name="ElementShortName">bram_enable_slave</obj_property>
+      <obj_property name="ObjectShortName">bram_enable_slave</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TOP_tb/uut/out_port_slave">
+      <obj_property name="ElementShortName">out_port_slave[7:0]</obj_property>
+      <obj_property name="ObjectShortName">out_port_slave[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TOP_tb/uut/write_strobe_slave">
+      <obj_property name="ElementShortName">write_strobe_slave</obj_property>
+      <obj_property name="ObjectShortName">write_strobe_slave</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TOP_tb/uut/k_write_strobe_slave">
+      <obj_property name="ElementShortName">k_write_strobe_slave</obj_property>
+      <obj_property name="ObjectShortName">k_write_strobe_slave</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TOP_tb/uut/interrupt_slave">
+      <obj_property name="ElementShortName">interrupt_slave</obj_property>
+      <obj_property name="ObjectShortName">interrupt_slave</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TOP_tb/uut/interrupt_ack_slave">
+      <obj_property name="ElementShortName">interrupt_ack_slave</obj_property>
+      <obj_property name="ObjectShortName">interrupt_ack_slave</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TOP_tb/uut/data_in">
+      <obj_property name="ElementShortName">data_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TOP_tb/uut/fifo_full">
+      <obj_property name="ElementShortName">fifo_full</obj_property>
+      <obj_property name="ObjectShortName">fifo_full</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TOP_tb/uut/fifo_empty">
+      <obj_property name="ElementShortName">fifo_empty</obj_property>
+      <obj_property name="ObjectShortName">fifo_empty</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TOP_tb/uut/fifo_threshold">
+      <obj_property name="ElementShortName">fifo_threshold</obj_property>
+      <obj_property name="ObjectShortName">fifo_threshold</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TOP_tb/uut/fifo_overflow">
+      <obj_property name="ElementShortName">fifo_overflow</obj_property>
+      <obj_property name="ObjectShortName">fifo_overflow</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TOP_tb/uut/fifo_underflow">
+      <obj_property name="ElementShortName">fifo_underflow</obj_property>
+      <obj_property name="ObjectShortName">fifo_underflow</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TOP_tb/uut/data_out">
+      <obj_property name="ElementShortName">data_out</obj_property>
+      <obj_property name="ObjectShortName">data_out</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TOP_tb/uut/FIFO/rbit">
+      <obj_property name="ElementShortName">rbit[3:0]</obj_property>
+      <obj_property name="ObjectShortName">rbit[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="vbus" fp_name="vbus177">
+      <obj_property name="label">rbit3bit</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="logic" fp_name="/TOP_tb/uut/FIFO/rbit[2]">
+         <obj_property name="ElementShortName">[2]</obj_property>
+         <obj_property name="ObjectShortName">[2]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/TOP_tb/uut/FIFO/rbit[1]">
+         <obj_property name="ElementShortName">[1]</obj_property>
+         <obj_property name="ObjectShortName">[1]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/TOP_tb/uut/FIFO/rbit[0]">
+         <obj_property name="ElementShortName">[0]</obj_property>
+         <obj_property name="ObjectShortName">[0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TOP_tb/uut/FIFO/fifo_we">
+      <obj_property name="ElementShortName">fifo_we</obj_property>
+      <obj_property name="ObjectShortName">fifo_we</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TOP_tb/uut/FIFO/fifo_rd">
+      <obj_property name="ElementShortName">fifo_rd</obj_property>
+      <obj_property name="ObjectShortName">fifo_rd</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TOP_tb/uut/read_strobe_slave">
+      <obj_property name="ElementShortName">read_strobe_slave</obj_property>
+      <obj_property name="ObjectShortName">read_strobe_slave</obj_property>
+   </wvobject>
+</wave_config>
