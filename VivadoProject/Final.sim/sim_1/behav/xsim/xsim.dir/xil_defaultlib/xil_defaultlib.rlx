@@ -2,12 +2,13 @@
 2019.1
 May 24 2019
 14:51:52
-/home/akif/Projects/EHB326E/Final/Final/Final.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
-/home/akif/Projects/EHB326E/Final/Final/Final.srcs/sim_1/new/TOP_tb.v,1578441812,verilog,,,,TOP_tb,,,,,,,,
-/home/akif/Projects/EHB326E/Final/Final/Final.srcs/sources_1/imports/Final/Slave_BRAM.v,1578440713,verilog,,/home/akif/Projects/EHB326E/Final/Final/Final.srcs/sources_1/new/TOP.v,,Slave_BRAM,,,,,,,,
-/home/akif/Projects/EHB326E/Final/Final/Final.srcs/sources_1/imports/Final/kcpsm6.v,1400651220,verilog,,/home/akif/Projects/EHB326E/Final/Final/Final.srcs/sim_1/new/TOP_tb.v,,kcpsm6,,,,,,,,
-/home/akif/Projects/EHB326E/Final/Final/Final.srcs/sources_1/ip/blk_mem_gen_0_4/sim/blk_mem_gen_0.v,1578441459,verilog,,/home/akif/Projects/EHB326E/Final/Master_BRAM.v,,blk_mem_gen_0,,,,,,,,
-/home/akif/Projects/EHB326E/Final/Final/Final.srcs/sources_1/new/FIFO.v,1578481204,verilog,,/home/akif/Projects/EHB326E/Final/Master_BRAM.v,,fifo_mem;memory_array;read_pointer;status_signal;write_pointer,,,,,,,,
-/home/akif/Projects/EHB326E/Final/Final/Final.srcs/sources_1/new/TOP.v,1578499329,verilog,,/home/akif/Projects/EHB326E/Final/Final/Final.srcs/sources_1/imports/Final/kcpsm6.v,,TOP,,,,,,,,
-,,,,,,,,,,,,,,
-/home/akif/Projects/EHB326E/Final/Master_BRAM.v,1578445284,verilog,,/home/akif/Projects/EHB326E/Final/Final/Final.srcs/sources_1/imports/Final/Slave_BRAM.v,,Master_BRAM,,,,,,,,
+/home/akif/Projects/EHB326E/Final/VivadoProject/Final.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+/home/akif/Projects/EHB326E/Final/VivadoProject/Final.srcs/sim_1/new/TOP_tb.v,1578441812,verilog,,,,TOP_tb,,,,,,,,
+/home/akif/Projects/EHB326E/Final/VivadoProject/Final.srcs/sources_1/imports/Final/Slave_BRAM.v,1578440713,verilog,,/home/akif/Projects/EHB326E/Final/VivadoProject/Final.srcs/sources_1/new/TOP.v,,Slave_BRAM,,,,,,,,
+/home/akif/Projects/EHB326E/Final/VivadoProject/Final.srcs/sources_1/imports/Final/kcpsm6.v,1400651220,verilog,,/home/akif/Projects/EHB326E/Final/VivadoProject/Final.srcs/sim_1/new/TOP_tb.v,,kcpsm6,,,,,,,,
+/home/akif/Projects/EHB326E/Final/VivadoProject/Final.srcs/sources_1/imports/design/Master_BRAM.v,1578445284,verilog,,/home/akif/Projects/EHB326E/Final/VivadoProject/Final.srcs/sources_1/imports/Final/Slave_BRAM.v,,Master_BRAM,,,,,,,,
+/home/akif/Projects/EHB326E/Final/VivadoProject/Final.srcs/sources_1/ip/blk_mem_gen_0_4/sim/blk_mem_gen_0.v,1578441459,verilog,,/home/akif/Projects/EHB326E/Final/VivadoProject/Final.srcs/sources_1/imports/design/Master_BRAM.v,,blk_mem_gen_0,,,,,,,,
+/home/akif/Projects/EHB326E/Final/VivadoProject/Final.srcs/sources_1/new/TOP.v,1578499329,verilog,,/home/akif/Projects/EHB326E/Final/VivadoProject/Final.srcs/sources_1/new/controller.v,,TOP,,,,,,,,
+/home/akif/Projects/EHB326E/Final/VivadoProject/Final.srcs/sources_1/new/controller.v,1578499327,verilog,,/home/akif/Projects/EHB326E/Final/VivadoProject/Final.srcs/sources_1/new/datapath.v,,controller;status_controller,,,,,,,,
+/home/akif/Projects/EHB326E/Final/VivadoProject/Final.srcs/sources_1/new/datapath.v,1578525584,verilog,,/home/akif/Projects/EHB326E/Final/VivadoProject/Final.srcs/sources_1/new/fifo.v,,datapath;memory_array_reg;rbit_reg;rptr_reg;status_signal_datapath;wptr_reg,,,,,,,,
+/home/akif/Projects/EHB326E/Final/VivadoProject/Final.srcs/sources_1/new/fifo.v,1578499731,verilog,,/home/akif/Projects/EHB326E/Final/VivadoProject/Final.srcs/sources_1/imports/Final/kcpsm6.v,,fifo,,,,,,,,
