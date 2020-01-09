@@ -21,4 +21,5 @@ ing received bit to the left and
 adding with new data
 - Slave writes data to the out port
 
-#### sudo 
+#### installing project with git clone command: 
+`git clone https://github.com/PicoBlazeProjects/MasterSlavePicoblaze_EmbeddedSystemProject.git`
