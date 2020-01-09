@@ -1,6 +1,6 @@
 # MasterSlavePicoblaze_EmbeddedSystemProject
 
-![]Project_Report_and_Poster/schematic(1).png
+![](Project_Report_and_Poster/schematic(1).png)
 
 in this project: It is performed that a master-slave configurated picoblaze system which reads data from block ram and sends over 1 bit line to the slave picoblaze. FIFO structure is used for this purpose as datapath which provides asynchronous write/read capabilities for master and slave picoblazes. FIFO outputs are used as interrupt signals.
 
