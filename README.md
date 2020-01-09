@@ -20,3 +20,5 @@ the 8 bit original data by shift-
 ing received bit to the left and
 adding with new data
 - Slave writes data to the out port
+
+####Code Blocks (Indented style)
