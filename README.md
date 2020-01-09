@@ -28,7 +28,7 @@ adding with new data
 #### installing project with git clone command: 
 `git clone https://github.com/PicoBlazeProjects/MasterSlavePicoblaze_EmbeddedSystemProject.git`
 
-Install the project and open the project file with vivado. Running the simulation will give the result. Further detail can be found in the project report.
+Install the project and open the project file with vivado. Running the simulation will give the result. Further details can be found in the project report.
 
 ### For any question and suggestion , please contact with us:
 Ömer Demirci
