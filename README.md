@@ -18,10 +18,8 @@ goes into interrupt
 goes into interrupt
 - Slave picoblaze reads data from
 FIFO block via 1 bit input
-- Slave picoblaze converts 1 bit in-
-put in every 8 data received to
-the 8 bit original data by shift-
-ing received bit to the left and
+- Slave picoblaze converts 1 bit input in every 8 data received to
+the 8 bit original data by shifting received bit to the left and
 adding with new data
 - Slave writes data to the out port
 
