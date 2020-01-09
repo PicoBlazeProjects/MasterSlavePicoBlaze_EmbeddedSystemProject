@@ -30,6 +30,9 @@ adding with new data
 
 Install the project and open the project file with vivado. Running the simulation will give the result. Further details can be found in the project report.
 
+### note:
+if any of the source files are not shown in the project file, add them via add files section in vivado and add them from 'design' source folder
+
 ### For any question and suggestion , please contact with us:
 Ömer Demirci
 demirciomer98@gmail.com
