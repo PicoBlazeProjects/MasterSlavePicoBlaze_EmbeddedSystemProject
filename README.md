@@ -21,4 +21,4 @@ ing received bit to the left and
 adding with new data
 - Slave writes data to the out port
 
-####Code Blocks (Indented style)
+#### sudo 
